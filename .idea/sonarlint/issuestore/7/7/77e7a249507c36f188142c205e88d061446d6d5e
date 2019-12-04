@@ -1,9 +1,0 @@
-
-7squid:S2326
-"V is not used in the class.(ÃĞœùıÿÿÿÿ
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÊÆ»…
-Psquid:S2864C"4Iterate over the "entrySet" instead of the "keySet".(¸ş ıÿÿÿÿ
-bsquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(³Å•Î
-psquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¶ÀÎÎ
-7squid:S2326
-"I is not used in the class.(ÃĞœùıÿÿÿÿ

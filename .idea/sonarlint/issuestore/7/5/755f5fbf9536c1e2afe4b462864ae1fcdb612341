@@ -1,8 +1,0 @@
-
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ìºéÚ
-gsquid:CommentedOutCodeLine]"<This block of commented-out lines of code should be removed.(èÚÿÕúÿÿÿÿ
-bsquid:CommentedOutCodeLineQ"<This block of commented-out lines of code should be removed.(ŠøÝã
-gsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(„ÉÏªùÿÿÿÿ
-asquid:CommentedOutCodeLine5"<This block of commented-out lines of code should be removed.(ÂùÍ/
-dsquid:S1192T"HDefine a constant instead of duplicating this literal "test.in" 4 times.(“ì€™ÿÿÿÿÿ
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÒÌâ–øÿÿÿÿ

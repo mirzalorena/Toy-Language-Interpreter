@@ -1,33 +1,0 @@
-
-‘squid:S1319&"sThe type of the "programs" object should be an interface such as "List" rather than the implementation "ArrayList".(„Ò™Ú8ÒÃ£âì-
-Jsquid:S1612!",Replace this lambda with a method reference.(Şæ¾8ĞÖÅáì-
-V
-squid:S106g"9Replace this use of System.out or System.err by a logger.(ìÍ¦‡8äƒØí-
-squid:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(áôª8Î¡­âì-
-_squid:UselessImportCheck"5Remove this unused import 'Collection.InterfaceHeap'.(ıŸz8ÇİÑí-
-V
-squid:S106Y"9Replace this use of System.out or System.err by a logger.(ìÍ¦‡8¤Ë¡âì-
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(º›°Î
-Osquid:S16125",Replace this lambda with a method reference.(²©¾°ıÿÿÿÿ8¦âóáì-
-dsquid:S2142A"FEither re-interrupt this method or rethrow the "InterruptedException".( ŠÙ 8ç€‘âì-
-vsquid:S16025"SRemove useless curly braces around statement and then remove useless return keyword(²©¾°ıÿÿÿÿ8¦âóáì-
-nsquid:S00100‡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Êìº¦8¤Ë¡âì-
-\squid:S1155w">Use isEmpty() to check whether the collection is empty or not.(ƒÕœ¸8ÖÌ¬âì-
-msquid:UselessImportCheck"=Remove this unused import 'Collection.InterfaceMyDictionary'.(‹òàıüÿÿÿÿ8ÿ·Èí-
-V
-squid:S1060"9Replace this use of System.out or System.err by a logger.(ìÍ¦‡8³Ğááì-
-gsquid:UselessImportCheck"7Remove this unused import 'Model.DataStructures.Value'.(â®ÀÚùÿÿÿÿ8ÇİÑí-
-\
-squid:S106¡"9Replace this use of System.out or System.err by a logger.(Êë”üÿÿÿÿ8¤Ë¡âì-
-V
-squid:S106K"9Replace this use of System.out or System.err by a logger.(ìÍ¦‡8ç€‘âì-
-\
-squid:S106™"9Replace this use of System.out or System.err by a logger.(Ø“Õ§ûÿÿÿÿ8¤Ë¡âì-
-U
-squid:S106c"9Replace this use of System.out or System.err by a logger.(ßµãa8äƒØí-
-[
-squid:S106U"9Replace this use of System.out or System.err by a logger.(¤ç¢üÿÿÿÿ8° âì-
-nsquid:S00100’"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ°ßö8¤Ë¡âì-
-isquid:S2142I"FEither re-interrupt this method or rethrow the "InterruptedException".(ÇâŞáøÿÿÿÿ8ç€‘âì-
-V
-squid:S106C"9Replace this use of System.out or System.err by a logger.(ìÍ¦‡8ç€‘âì-
