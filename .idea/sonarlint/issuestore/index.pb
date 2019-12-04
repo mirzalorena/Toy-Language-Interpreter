@@ -27,8 +27,6 @@ H
 src/View/RunExample.java,c\f\cf3c8d42916bdf91108eece461e86361621010bb
 I
 src/View/Interpreter.java,7\5\755f5fbf9536c1e2afe4b462864ae1fcdb612341
-9
-	log10.txt,3\a\3a46dc50b4366f8961a4b7cc84801d45f778689a
 Q
 !src/Collection/InterfaceHeap.java,7\e\7eed5994f19de2a73b023e25e32faf3744c36f4c
 6
