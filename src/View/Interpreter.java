@@ -42,6 +42,7 @@ public class Interpreter {
 
     public static void main(String[] args)
     {
+
         IStatement ex1 = new CompoundStatement(new VarDeclStmt("v", new IntType()),
                 new CompoundStatement(new AssignStatement("v", new ValueExpression(new IntValue(2))),
                         new PrintStatement(new VarExpression("v"))));
@@ -151,8 +152,8 @@ public class Interpreter {
         Controller ctrl9 = new Controller(repo9);
 
         IStatement ex10 = new CompoundStatement(new CompoundStatement(new CompoundStatement(new CompoundStatement(new CompoundStatement(new CompoundStatement(new VarDeclStmt("v", new IntType()), new VarDeclStmt("a", new RefType(new IntType()))),
-                new AssignStatement("v", new ValueExpression(new IntValue(10)))), new NewStatement(new StringValue("a"), new ValueExpression(new IntValue(30)))),
-                new ForkStatement(new CompoundStatement(new CompoundStatement(new CompoundStatement(new WriteStatement(new StringValue("a"), new ValueExpression(new IntValue(22))), new AssignStatement("v", new ValueExpression(new IntValue(32)))),
+                new AssignStatement("v", new ValueExpression(new IntValue(10)))), new NewStatement(new StringValue("a"), new ValueExpression(new IntValue(22)))),
+                new ForkStatement(new CompoundStatement(new CompoundStatement(new CompoundStatement(new WriteStatement(new StringValue("a"), new ValueExpression(new IntValue(30))), new AssignStatement("v", new ValueExpression(new IntValue(32)))),
                         new PrintStatement(new VarExpression("v"))), new PrintStatement(new HeapReading(new VarExpression("a")))))), new PrintStatement(new VarExpression("v"))),
                 new PrintStatement(new HeapReading(new VarExpression("a"))));
 

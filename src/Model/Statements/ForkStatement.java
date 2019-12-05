@@ -17,7 +17,7 @@ public class ForkStatement implements IStatement{
     public ProgramState execute(ProgramState state) throws MyException
     {
         ProgramState newProgramState=new ProgramState(new MyStack<>(),state.getSymbolTable().deepCopy(),
-                state.getOutputList(),statement.deepCopy(),state.getFileTable(),state.getHeapTable(),state.getNewId());
+                state.getOutputList(),statement,state.getFileTable(),state.getHeapTable(),state.getNewId());
         return newProgramState;
     }
 

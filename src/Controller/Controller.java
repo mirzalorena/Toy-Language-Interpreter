@@ -102,7 +102,7 @@ public class Controller {
             }
         });
 
-        repository.setProgramStateList(programs);
+        repository.setProgramStateList((ArrayList)programs);
 
 
 
@@ -120,6 +120,8 @@ public class Controller {
                     myGarbageCollector.safeGarbageCollector(myGarbageCollector.addIndirections(
                             myGarbageCollector.getAdresFromTables(repository.getProgramStateList()),repository.getCurrentProgram().getHeapTable()
                     ), repository.getCurrentProgram().getHeapTable()));
+
+
             oneStepForAllProgram(programList);
             programList=removeCompletedProgram(repository.getProgramStateList());
 

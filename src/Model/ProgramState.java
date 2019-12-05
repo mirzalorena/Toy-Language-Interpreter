@@ -130,11 +130,9 @@ public class ProgramState {
         if(executionStack.isEmpty())
             throw new MyException("Execution stack is empty\n");
         IStatement currentStatement=executionStack.pop();
-       if(currentStatement!=null)
-        {
+
             return currentStatement.execute(this);
-        }
-        return null;
+
     }
 
 
