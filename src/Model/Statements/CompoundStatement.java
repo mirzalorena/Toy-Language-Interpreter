@@ -24,7 +24,7 @@ public class CompoundStatement implements IStatement {
         stack.push(first);
 
 
-        return state;
+        return null;
     }
 
 

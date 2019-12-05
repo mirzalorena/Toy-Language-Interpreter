@@ -32,7 +32,7 @@ public class VarDeclStmt implements IStatement {
         state.getSymbolTable().put(name, typ.defaultValue());
         //state.setSymbolTable(symTable);
 
-        return state;
+        return null;
     }
 
     @Override

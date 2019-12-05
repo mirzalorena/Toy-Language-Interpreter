@@ -143,7 +143,7 @@ public class ProgramState {
     @Override
     public String toString()
     {
-        return "\nID: "+this.id+
+        return "\nID: "+Integer.toString(id)+
                 "\nExecution stack:\n"+
                 executionStack.toString()+"\nSymbol table:\n"+
                 symbolTable.toString()+"\nOutput list:\n"+

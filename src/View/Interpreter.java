@@ -150,11 +150,11 @@ public class Interpreter {
         InterfaceRepository repo9 = new Repository(prg9, "log9.txt");
         Controller ctrl9 = new Controller(repo9);
 
-        IStatement ex10 = new CompoundStatement(new CompoundStatement(new CompoundStatement(new CompoundStatement(new CompoundStatement(new CompoundStatement(new CompoundStatement(new CompoundStatement(new CompoundStatement(new VarDeclStmt("v", new IntType()), new VarDeclStmt("a",
-                new RefType(new IntType()))), new AssignStatement("v", new ValueExpression(new IntValue(10)))),
-                new NewStatement(new StringValue("a"), new ValueExpression(new IntValue(22)))), new ForkStatement(new WriteStatement(new StringValue("a"), new ValueExpression(new IntValue(30))))),
-                new AssignStatement("v", new ValueExpression(new IntValue(32)))), new PrintStatement(new VarExpression("v"))), new PrintStatement(new HeapReading(new VarExpression("a")))),
-                new PrintStatement(new VarExpression("v"))), new PrintStatement(new HeapReading(new VarExpression("a"))));
+        IStatement ex10 = new CompoundStatement(new CompoundStatement(new CompoundStatement(new CompoundStatement(new CompoundStatement(new CompoundStatement(new VarDeclStmt("v", new IntType()), new VarDeclStmt("a", new RefType(new IntType()))),
+                new AssignStatement("v", new ValueExpression(new IntValue(10)))), new NewStatement(new StringValue("a"), new ValueExpression(new IntValue(30)))),
+                new ForkStatement(new CompoundStatement(new CompoundStatement(new CompoundStatement(new WriteStatement(new StringValue("a"), new ValueExpression(new IntValue(22))), new AssignStatement("v", new ValueExpression(new IntValue(32)))),
+                        new PrintStatement(new VarExpression("v"))), new PrintStatement(new HeapReading(new VarExpression("a")))))), new PrintStatement(new VarExpression("v"))),
+                new PrintStatement(new HeapReading(new VarExpression("a"))));
 
         ArrayList<ProgramState> prg10 = new ArrayList<>();
         prg10.add(new ProgramState(ex10));
