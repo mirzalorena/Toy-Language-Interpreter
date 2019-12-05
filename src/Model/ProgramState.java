@@ -1,7 +1,6 @@
 package Model;
 
 import Collection.*;
-import Model.DataStructures.StringValue;
 import Model.DataStructures.Value;
 import Model.Statements.IStatement;
 import java.io.*;
@@ -14,8 +13,8 @@ public class ProgramState {
     private IStatement originalProgram;
     private InterfaceMyDictionary<Value, BufferedReader> fileTable;
     private InterfaceHeap heapTable;
-    public int id;
-    public static int lastAssigned=1;
+    private int id;
+    private static int lastAssigned=1;
 
     public static int getNewId()
     {
@@ -143,7 +142,7 @@ public class ProgramState {
     @Override
     public String toString()
     {
-        return "\nID: "+Integer.toString(id)+
+        return "\nID: "+id +
                 "\nExecution stack:\n"+
                 executionStack.toString()+"\nSymbol table:\n"+
                 symbolTable.toString()+"\nOutput list:\n"+

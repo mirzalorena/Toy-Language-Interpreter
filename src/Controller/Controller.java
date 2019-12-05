@@ -1,9 +1,6 @@
 package Controller;
 
 import Collection.InterfaceMyStack;
-import Collection.InterfaceMyDictionary;
-import Collection.InterfaceHeap;
-import Model.DataStructures.Value;
 import Model.Statements.IStatement;
 import Model.MyException;
 import Model.ProgramState;
@@ -28,14 +25,15 @@ public class Controller {
         this.myGarbageCollector=new GarbageColector();
     }
 
-    public ArrayList<ProgramState> removeCompletedProgram(List<ProgramState> inProgress)
+    private ArrayList<ProgramState> removeCompletedProgram(List<ProgramState> inProgress)
     {
         return (ArrayList) inProgress.stream().filter(p->p.isNotCompleted()).collect(Collectors.toList());
     }
 
 
 
-    public void oneStepForAllProgram(ArrayList<ProgramState> programs) throws MyException,InterruptedException
+
+    private void oneStepForAllProgram(ArrayList<ProgramState> programs) throws MyException,InterruptedException
     {
         //print in the log file
         programs.forEach(program-> {
