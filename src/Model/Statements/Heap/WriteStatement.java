@@ -61,6 +61,18 @@ public class WriteStatement implements IStatement {
         return "wH( " + var_name + ", " + expression.toString() + ") ";
     }
 
+    @Override
+    public InterfaceMyDictionary<String, Type> typecheck(InterfaceMyDictionary<String,Type> typeEnv) throws MyException
+    {
+        Type typevar = typeEnv.lookup(var_name.toString());
+        Type typexp = expression.typecheck(typeEnv);
+        if (typevar.equals(new RefType(typexp)))
+            return typeEnv;
+        else
+            throw new MyException("la");
+
+    }
+
 
 
 }

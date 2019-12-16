@@ -3,6 +3,7 @@ package Model.Statements;
 import Collection.InterfaceHeap;
 import Collection.InterfaceMyDictionary;
 import Collection.InterfaceMyList;
+import Model.DataStructures.Type;
 import Model.Expressions.Expression;
 import Model.MyException;
 import Model.ProgramState;
@@ -41,6 +42,14 @@ public class PrintStatement implements IStatement {
     public IStatement deepCopy()
     {
         return new PrintStatement(expression);
+    }
+
+    @Override
+    public InterfaceMyDictionary<String, Type> typecheck(InterfaceMyDictionary<String,Type> typeEnv) throws MyException
+    {
+        expression.typecheck(typeEnv);
+        return typeEnv;
+
     }
 
 }

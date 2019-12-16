@@ -1,6 +1,7 @@
 package Model.Statements.Heap;
 
 import Collection.InterfaceHeap;
+import Collection.InterfaceMyDictionary;
 import Model.DataStructures.*;
 import Model.Expressions.Expression;
 import Model.MyException;
@@ -56,6 +57,18 @@ public class NewStatement implements IStatement {
         return state;
 
 
+
+    }
+
+    @Override
+    public InterfaceMyDictionary<String, Type> typecheck(InterfaceMyDictionary<String,Type> typeEnv) throws MyException
+    {
+        Type typevar = typeEnv.lookup(var_name.toString());
+        Type typexp = expression.typecheck(typeEnv);
+        if (typevar.equals(new RefType(typexp)))
+            return typeEnv;
+        else
+            throw new MyException("la");
 
     }
 

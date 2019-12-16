@@ -2,10 +2,8 @@ package Model.Expressions;
 
 import Collection.InterfaceHeap;
 import Collection.InterfaceMyDictionary;
-import Model.DataStructures.BoolType;
-import Model.DataStructures.BoolValue;
+import Model.DataStructures.*;
 import Model.MyException;
-import Model.DataStructures.Value;
 
 public class LogicExpression implements Expression {
     private Expression e1;
@@ -48,4 +46,22 @@ public class LogicExpression implements Expression {
 
         return null;
     }
+
+    @Override
+    public Type typecheck(InterfaceMyDictionary<String,Type> typeEnv) throws MyException
+    {
+        Type typ1,typ2;
+        typ1=e1.typecheck(typeEnv);
+        typ2=e2.typecheck(typeEnv);
+
+        if (typ1.equals(new BoolType())) {
+            if (typ2.equals(new BoolType())) {
+                return new BoolType();
+            } else
+                throw new MyException("second operand is not an integer");
+        }else
+            throw new MyException("first operand is not an integer");
+
+    }
+
 }

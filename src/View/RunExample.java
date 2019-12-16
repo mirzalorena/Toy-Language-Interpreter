@@ -1,5 +1,8 @@
 package View;
+import Collection.InterfaceMyDictionary;
+import Collection.MyDictionary;
 import Controller.*;
+import Model.DataStructures.Type;
 import Model.MyException;
 
 import java.io.IOException;
@@ -13,6 +16,10 @@ public class RunExample extends Command {
     @Override
     public void execute() {
         try{
+            MyDictionary<String, Type> typEnv=new MyDictionary<String,Type>();
+            ctr.getOriginalProgram().typecheck(typEnv);
+
+
             ctr.allStep(); }
         catch (MyException | InterruptedException e) {System.out.println(e.getMessage());}
     }

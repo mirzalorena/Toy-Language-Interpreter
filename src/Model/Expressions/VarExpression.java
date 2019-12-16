@@ -2,6 +2,7 @@ package Model.Expressions;
 
 import Collection.InterfaceHeap;
 import Collection.InterfaceMyDictionary;
+import Model.DataStructures.Type;
 import Model.MyException;
 import Model.DataStructures.Value;
 
@@ -34,4 +35,13 @@ public class VarExpression implements Expression {
     {
         return id;
     }
+
+    @Override
+    public Type typecheck(InterfaceMyDictionary<String,Type> typeEnv) throws MyException
+    {
+        return typeEnv.lookup(id);
+
+    }
+
+
 }

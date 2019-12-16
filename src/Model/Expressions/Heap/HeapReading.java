@@ -2,8 +2,7 @@ package Model.Expressions.Heap;
 
 import Collection.InterfaceHeap;
 import Collection.InterfaceMyDictionary;
-import Model.DataStructures.RefValue;
-import Model.DataStructures.Value;
+import Model.DataStructures.*;
 import Model.Expressions.Expression;
 import Model.MyException;
 
@@ -38,6 +37,22 @@ public class HeapReading implements Expression {
     {
         return "rH( "+expression.toString()+")";
     }
+
+    @Override
+    public Type typecheck(InterfaceMyDictionary<String,Type> typeEnv) throws MyException
+    {
+        Type typ=expression.typecheck(typeEnv);
+        if(typ instanceof RefType)
+        {
+            RefType ref=(RefType) typ;
+            return ref.getInner();
+        }
+        else
+            throw new MyException("lala");
+
+    }
+
+
 
 
 }

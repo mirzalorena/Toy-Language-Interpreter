@@ -47,4 +47,12 @@ public class VarDeclStmt implements IStatement {
         return new VarDeclStmt(name,typ);
     }
 
+    @Override
+    public InterfaceMyDictionary<String, Type> typecheck(InterfaceMyDictionary<String,Type> typeEnv) throws MyException
+    {
+        typeEnv.put(name,typ);
+        return typeEnv;
+
+    }
+
 }

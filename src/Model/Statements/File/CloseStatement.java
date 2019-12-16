@@ -3,6 +3,7 @@ package Model.Statements.File;
 import Collection.InterfaceMyDictionary;
 import Model.DataStructures.StringType;
 import Model.DataStructures.StringValue;
+import Model.DataStructures.Type;
 import Model.DataStructures.Value;
 import Model.Expressions.Expression;
 import Model.MyException;
@@ -88,6 +89,14 @@ public class CloseStatement implements IStatement {
     public String toString()
     {
         return " closeFile( "+exp.toString()+" )";
+    }
+
+    @Override
+    public InterfaceMyDictionary<String, Type> typecheck(InterfaceMyDictionary<String,Type> typeEnv) throws MyException
+    {
+        Type typexp = exp.typecheck(typeEnv);
+        return typeEnv;
+
     }
 
 }

@@ -4,6 +4,7 @@ import Collection.InterfaceHeap;
 import Collection.InterfaceMyDictionary;
 import Model.DataStructures.BoolValue;
 import Model.DataStructures.IntType;
+import Model.DataStructures.Type;
 import Model.DataStructures.Value;
 import Model.MyException;
 
@@ -99,6 +100,23 @@ public class RelationalExpression implements Expression {
 
 
         return result;
+    }
+
+    @Override
+    public Type typecheck(InterfaceMyDictionary<String,Type> typeEnv) throws MyException
+    {
+        Type typ1,typ2;
+        typ1=exp1.typecheck(typeEnv);
+        typ2=exp2.typecheck(typeEnv);
+
+        if (typ1.equals(new IntType())) {
+            if (typ2.equals(new IntType())) {
+                return new IntType();
+            } else
+                throw new MyException("second operand is not an integer");
+        }else
+            throw new MyException("first operand is not an integer");
+
     }
 
 

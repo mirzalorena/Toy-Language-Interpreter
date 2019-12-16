@@ -1,9 +1,7 @@
 package Model.Statements.File;
 
 import Collection.InterfaceMyDictionary;
-import Model.DataStructures.StringType;
-import Model.DataStructures.StringValue;
-import Model.DataStructures.Value;
+import Model.DataStructures.*;
 import Model.Expressions.Expression;
 import Model.MyException;
 import Model.ProgramState;
@@ -65,6 +63,14 @@ public class OpenFileStatement implements IStatement {
     public String toString()
     {
         return "OpenFile( "+exp.toString()+" )";
+    }
+
+    @Override
+    public InterfaceMyDictionary<String, Type> typecheck(InterfaceMyDictionary<String,Type> typeEnv) throws MyException
+    {
+        Type typexp = exp.typecheck(typeEnv);
+            return typeEnv;
+
     }
 
 

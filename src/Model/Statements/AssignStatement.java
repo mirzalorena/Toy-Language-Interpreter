@@ -69,4 +69,16 @@ public class AssignStatement implements IStatement {
         return new AssignStatement(id,expression);
     }
 
+    @Override
+    public InterfaceMyDictionary<String, Type> typecheck(InterfaceMyDictionary<String,Type> typeEnv) throws MyException
+    {
+        Type typevar=typeEnv.lookup(id);
+        Type typexp=expression.typecheck(typeEnv);
+        if(typevar.equals(typexp))
+            return typeEnv;
+        else
+            throw new MyException("assign");
+
+    }
+
 }

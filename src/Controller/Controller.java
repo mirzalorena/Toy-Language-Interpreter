@@ -30,6 +30,11 @@ public class Controller {
         return (ArrayList) inProgress.stream().filter(p->p.isNotCompleted()).collect(Collectors.toList());
     }
 
+    public IStatement getOriginalProgram()
+    {
+        return repository.getCurrentProgram().getOriginalProgram();
+
+    }
 
 
 

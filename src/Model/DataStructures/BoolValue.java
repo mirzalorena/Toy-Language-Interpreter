@@ -17,7 +17,7 @@ public class BoolValue implements Value {
     @Override
     public Type getType()
     {
-        return new IntType();
+        return new BoolType();
     }
 
 

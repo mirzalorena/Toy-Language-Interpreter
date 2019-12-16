@@ -1,10 +1,7 @@
 package Model.Statements.File;
 
 import Collection.InterfaceMyDictionary;
-import Model.DataStructures.IntType;
-import Model.DataStructures.IntValue;
-import Model.DataStructures.StringValue;
-import Model.DataStructures.Value;
+import Model.DataStructures.*;
 import Model.Expressions.Expression;
 import Model.MyException;
 import Model.ProgramState;
@@ -138,6 +135,18 @@ public class ReadFileStatement implements IStatement {
     public String toString()
     {
         return "readFile( "+exp.toString()+" , "+var_name+" )";
+    }
+
+    @Override
+    public InterfaceMyDictionary<String, Type> typecheck(InterfaceMyDictionary<String,Type> typeEnv) throws MyException
+    {
+        Type typevar = typeEnv.lookup(var_name.toString());
+        Type typexp = exp.typecheck(typeEnv);
+        if (typevar.equals(new IntType()))
+            return typeEnv;
+        else
+            throw new MyException("la");
+
     }
 
 

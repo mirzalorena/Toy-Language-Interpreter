@@ -1,7 +1,9 @@
 package Model.Statements;
 
 
+import Collection.InterfaceMyDictionary;
 import Collection.InterfaceMyStack;
+import Model.DataStructures.Type;
 import Model.MyException;
 import Model.ProgramState;
 
@@ -38,6 +40,14 @@ public class CompoundStatement implements IStatement {
     public IStatement deepCopy()
     {
         return new CompoundStatement(first,second);
+    }
+
+    @Override
+    public InterfaceMyDictionary<String, Type> typecheck(InterfaceMyDictionary<String,Type> typeEnv) throws MyException
+    {
+
+        return second.typecheck(first.typecheck(typeEnv));
+
     }
 
 }

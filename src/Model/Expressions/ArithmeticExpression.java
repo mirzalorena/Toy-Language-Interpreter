@@ -5,6 +5,7 @@ import Collection.InterfaceMyDictionary;
 import Model.*;
 import Model.DataStructures.IntType;
 import Model.DataStructures.IntValue;
+import Model.DataStructures.Type;
 import Model.DataStructures.Value;
 
 public class ArithmeticExpression implements Expression {
@@ -95,6 +96,24 @@ public class ArithmeticExpression implements Expression {
         return stringToPrint;
 
     }
+
+    @Override
+    public Type typecheck(InterfaceMyDictionary<String,Type> typeEnv) throws MyException
+    {
+        Type typ1,typ2;
+        typ1=e1.typecheck(typeEnv);
+        typ2=e2.typecheck(typeEnv);
+
+        if (typ1.equals(new IntType())) {
+        if (typ2.equals(new IntType())) {
+            return new IntType();
+        } else
+        throw new MyException("second operand is not an integer");
+    }else
+        throw new MyException("first operand is not an integer");
+
+    }
+
 
 
 }
