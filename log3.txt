@@ -1,0 +1,471 @@
+
+ID: 4
+Execution stack:
+bool a; int v; a = true; IF(a) then (v = 2) else (v = 3)
+; print( v)
+
+Symbol table:
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+int v; a = true; IF(a) then (v = 2) else (v = 3)
+; print( v)
+bool a
+
+Symbol table:
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+int v; a = true; IF(a) then (v = 2) else (v = 3)
+; print( v)
+bool a
+
+Symbol table:
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+int v; a = true; IF(a) then (v = 2) else (v = 3)
+; print( v)
+bool a
+
+Symbol table:
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+int v; a = true; IF(a) then (v = 2) else (v = 3)
+; print( v)
+
+Symbol table:
+a-->false
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+int v; a = true; IF(a) then (v = 2) else (v = 3)
+; print( v)
+
+Symbol table:
+a-->false
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+int v; a = true; IF(a) then (v = 2) else (v = 3)
+; print( v)
+
+Symbol table:
+a-->false
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+a = true; IF(a) then (v = 2) else (v = 3)
+; print( v)
+int v
+
+Symbol table:
+a-->false
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+a = true; IF(a) then (v = 2) else (v = 3)
+; print( v)
+int v
+
+Symbol table:
+a-->false
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+a = true; IF(a) then (v = 2) else (v = 3)
+; print( v)
+int v
+
+Symbol table:
+a-->false
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+a = true; IF(a) then (v = 2) else (v = 3)
+; print( v)
+
+Symbol table:
+a-->false
+v-->0
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+a = true; IF(a) then (v = 2) else (v = 3)
+; print( v)
+
+Symbol table:
+a-->false
+v-->0
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+a = true; IF(a) then (v = 2) else (v = 3)
+; print( v)
+
+Symbol table:
+a-->false
+v-->0
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+IF(a) then (v = 2) else (v = 3)
+; print( v)
+a = true
+
+Symbol table:
+a-->false
+v-->0
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+IF(a) then (v = 2) else (v = 3)
+; print( v)
+a = true
+
+Symbol table:
+a-->false
+v-->0
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+IF(a) then (v = 2) else (v = 3)
+; print( v)
+a = true
+
+Symbol table:
+a-->false
+v-->0
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+IF(a) then (v = 2) else (v = 3)
+; print( v)
+
+Symbol table:
+a-->true
+v-->0
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+IF(a) then (v = 2) else (v = 3)
+; print( v)
+
+Symbol table:
+a-->true
+v-->0
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+IF(a) then (v = 2) else (v = 3)
+; print( v)
+
+Symbol table:
+a-->true
+v-->0
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+print( v)
+IF(a) then (v = 2) else (v = 3)
+
+
+Symbol table:
+a-->true
+v-->0
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+print( v)
+IF(a) then (v = 2) else (v = 3)
+
+
+Symbol table:
+a-->true
+v-->0
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+print( v)
+IF(a) then (v = 2) else (v = 3)
+
+
+Symbol table:
+a-->true
+v-->0
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+print( v)
+v = 2
+
+Symbol table:
+a-->true
+v-->0
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+print( v)
+v = 2
+
+Symbol table:
+a-->true
+v-->0
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+print( v)
+v = 2
+
+Symbol table:
+a-->true
+v-->0
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+print( v)
+
+Symbol table:
+a-->true
+v-->2
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+print( v)
+
+Symbol table:
+a-->true
+v-->2
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+print( v)
+
+Symbol table:
+a-->true
+v-->2
+
+Output list:
+[]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+
+Symbol table:
+a-->true
+v-->2
+
+Output list:
+[2]
+File table:
+
+Heap table:
+
+
+ID: 4
+Execution stack:
+
+Symbol table:
+a-->true
+v-->2
+
+Output list:
+[2]
+File table:
+
+Heap table:
+
